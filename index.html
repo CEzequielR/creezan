@@ -1,1 +1,44 @@
-hola
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+        </form>
+        <div id="tasksContainer"></div>
+    </div>
+</body>
+
+<p>Puedes acceder a tus cursos, como <a href="http://ies9021.mendoza.edu.ar/course/view.php?id=97"> Soporte e Infraestructura
+    </a>, <a href="http://ies9021.mendoza.edu.ar/course/view.php?id=105">Redes Aplicadas </a> y
+    <a href="http://ies9021.mendoza.edu.ar/course/view.php?id=37">Prácticas 3 </a>.</p>
+
+<button type="button" onclick="javascript:void(window.open('http://ies9021.mendoza.edu.ar/course/view.php?id=97'));" class="btn rss">Soporte e Infraestructura</button>
+<style>
+.btn{margin:10px 0 10px 0;color:#ffffff;font-weight:bold;display:inline-block;padding:6px 12px;font-size:16px;text-align:center;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;outline: 0;}
+.rss{background-color:#09ff00;}
+.rss:hover{background-color:#1a8623;}
+</style>
+</html> 
+
