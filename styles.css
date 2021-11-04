@@ -1,10 +1,10 @@
 :root {
-    --primary: #ff3c00;
-    --secondary: #71eb00;
+    --primary: #00ff00;
+    --secondary: #000000;
     --light: #fff;
     --dark: rgb(0, 0, 0);
-    --diabled:  rgb(106, 197, 209);
-    background: linear-gradient(90deg, rgb(106, 162, 179) 50%, rgb(141, 207, 204) 100%, rgba(0,212,255,1) 100%); 
+    --diabled:  rgb(82, 230, 77);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 50%, rgb(141, 207, 204) 100%, rgba(0,212,255,1) 100%); 
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     margin: 25px auto;
     padding: 25px;
     background-color: var(--light);
-    width: 100%;
+    width: 110%;
     max-width: 350px;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 #dateText {
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 form {
-    margin: 20px 0;
+    margin: 20px -10px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 35px auto;
@@ -85,6 +85,7 @@ input:focus {
     border: none;
     font-weight: bold;
     cursor: pointer;
+
 }
 
 .addTaskButton {
@@ -97,12 +98,14 @@ input:focus {
 .orderButton {
     background-color: var(--secondary);
     color: var(--light);
+    font-size: 10px;
+    margin-top: 0px 50px;
 }
 
 .task {
     background-color: var(--primary);
-    padding: 15px;
-    margin-top: 15px;
+    padding: 20px;
+    margin-top: 30px;
     color: var(--light);
     cursor: pointer;
 }
